@@ -1,0 +1,69 @@
+{
+    "title": {
+        "type": "plain_text",
+        "text": "Send Direct Response",
+        "emoji": true
+    },
+    "submit": {
+        "type": "plain_text",
+        "text": "Send",
+        "emoji": true
+    },
+    "close": {
+        "type": "plain_text",
+        "text": "Cancel",
+        "emoji": true
+    },
+
+    "type": "modal",
+    "callback_id": "dm_in_thread_submit_modal",
+
+    "blocks": [
+        {
+            "type": "section",
+            "text": {
+                "type": "plain_text",
+                "text": "Send a message responding to the message you selected. You can include multiple people.",
+                "emoji": true
+            }
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type": "input",
+            "block_id": "message_block",
+            "label": {
+                "type": "plain_text",
+                "text": "Message",
+                "emoji": true
+            },
+            "element": {
+                "type": "plain_text_input",
+                "action_id": "message",
+                "multiline": true,
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Type your message here"
+                }
+            }
+        },
+        {
+            "type": "input",
+            "block_id": "recipients_block",
+            "label": {
+                "type": "plain_text",
+                "text": "Recipients",
+                "emoji": true
+            },
+            "element": {
+                "type": "multi_users_select",
+                "action_id": "recipients",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Select recipients"
+                }
+            }
+        }
+    ]
+}

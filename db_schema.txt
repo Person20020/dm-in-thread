@@ -1,0 +1,12 @@
+CREATE TABLE sent_messages (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    sender TEXT NOT NULL,
+    recipients TEXT NOT NULL,
+    channel_id TEXT NOT NULL,
+    message_text TEXT NOT NULL,
+    sent_message_timestamps TEXT NOT NULL
+);
+
+CREATE TABLE (
+    id INTEGER PRIMARY KEY
+);

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DM in Thread</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="{{ url_for('static', filename='thread.png') }}"
+        />
+    </head>
+    <body>
+        <main>
+            <h1>DM in Thread</h1>
+            <p>
+                A slack bot to allow you to directly message specific users in a
+                thread. (e.g. to try to make them stay on topic without cluttering
+                the thread)
+            </p>
+            <div>
+                <h2>Usage</h2>
+                <p>
+                    <code>DM in Thread</code> (Shortcut) - Open a window to send a
+                    message. From here you can specify the recipient(s) and the
+                    contents of your message.
+                </p>
+            </div>
+            <div>
+                <h2>Running Bot</h2>
+                <ol>
+                    <li>
+                        <p>
+                            Clone repository<br /><code
+                                >git clone
+                                https://github.com/Person20020/dm-in-thread.git
+                                &amp;&amp; cd dm-in-thread</code
+                            >
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Create python venv<br /><code>python -m venv venv</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Activate venv<br /><code>
+                                source venv/bin/activate</code> # Linux/MacOS<br />
+                            <code>
+                                venv\Scripts\activate</code> # Windows
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Install dependencies<br /><code>
+                                pip install -r requirements.txt
+                            </code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Create a .env file in the root directory with the following
+                            variables:<br />
+                            <blockquote>
+                                SLACK_BOT_TOKEN=your-bot-token<br />
+                                DB_PATH=path/to/your/sqlite/db<br />
+                                PORT=&lt;optional&gt;
+                            </blockquote>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h2>Source</h2>
+                <p>
+                    This bot is open source and available in this <a href="https://github.com/Person20020/dm-in-thread">GitHub repo</a>.
+                </p>
+            </div>
+            <div>
+                <h2>Demo</h2>
+                <p>
+                    Demo video
+                </p>
+                <h3 style="color:red;">TODO WILL ADD LATER</h3>
+                <video controls>
+                    <source src="{{ url_for('static', filename='demo.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </main>
+        <footer>
+            <p>
+                Created by <a href="https://github.com/Person20020">Person20020</a>.
+            </p>
+        </footer>
+    </body>
+</html>

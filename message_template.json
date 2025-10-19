@@ -1,0 +1,48 @@
+{
+    "blocks": [
+        {
+            "type": "context",
+            "elements": [
+                {
+                    "type": "mrkdwn",
+                    "text": "_This message was sent by <USER_PLACEHOLDER>_"
+                }
+            ]
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "<MESSAGE_PLACEHOLDER>"
+            }
+        },
+        {
+            "type": "actions",
+            "elements": [
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Reply",
+                        "emoji": true
+                    },
+                    "value": "reply_button",
+                    "action_id": "reply_button_action"
+                },
+                {
+                    "type": "button",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "Other button IDK",
+                        "emoji": true
+                    },
+                    "value": "other_button",
+                    "action_id": "other_button_action"
+                }
+            ]
+        }
+    ]
+}
