@@ -1,0 +1,42 @@
+{
+    "type": "modal",
+    "title": {
+        "type": "plain_text",
+        "text": "Reply"
+    },
+    "submit": {
+        "type": "plain_text",
+        "text": "Send"
+    },
+    "close": {
+        "type": "plain_text",
+        "text": "Cancel"
+    },
+    "callback_id": "reply_submit_modal",
+
+    "blocks": [
+        {
+            "type": "section",
+            "text": {
+                "type": "plain_text",
+                "text": "Enter your reply below:"
+            }
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type": "input",
+            "block_id": "reply_input_block",
+            "label": {
+                "type": "plain_text",
+                "text": "Reply"
+            },
+            "element": {
+                "type": "plain_text_input",
+                "multiline": true,
+                "action_id": "reply_input"
+            }
+        }
+    ]
+}

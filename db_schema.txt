@@ -4,9 +4,16 @@ CREATE TABLE sent_messages (
     recipients TEXT NOT NULL,
     channel_id TEXT NOT NULL,
     message_text TEXT NOT NULL,
-    sent_message_timestamps TEXT NOT NULL
+    sent_message_timestamps TEXT NOT NULL,
+    deleted BOOLEAN NOT NULL DEFAULT 0,
+    type TEXT NOT NULL
 );
 
-CREATE TABLE (
-    id INTEGER PRIMARY KEY
+CREATE TABLE replies (
+    id INTEGER PRIMARY KEY,
+    sender TEXT NOT NULL,
+    recipients TEXT NOT NULL,
+    channel_id TEXT NOT NULL,
+    message_text TEXT NOT NULL,
+    sent_message_timestamp REAL NOT NULL
 );

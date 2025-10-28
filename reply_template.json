@@ -5,7 +5,7 @@
             "elements": [
                 {
                     "type": "mrkdwn",
-                    "text": "_This message was sent by <SENDER_PLACEHOLDER>_"
+                    "text": "↩️ <REPLIED_TO_USER_PROFILE> | <SHORTENED_MESSAGE_PREVIEW>"
                 }
             ]
         },
