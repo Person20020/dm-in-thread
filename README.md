@@ -3,7 +3,9 @@
 A slack bot to allow you to directly message specific users in a thread. (e.g. to try to make them stay on topic without cluttering the thread)
 Usage
 
-DM in Thread (Shortcut) - Open a window to send a message. From here you can specify the recipient(s) and the contents of your message.
+`DM in Thread` (Shortcut) - Open a window to send a message. From here you can specify the recipient(s) and the contents of your message.
+
+`Reply` (Shortcut) - Open a window to send a message. The sent message is formatted as a reply to a previous message with a preview of the other person's message and a link to it. (It is similar to discord replies)
 
 ## Running Bot
 
@@ -31,7 +33,9 @@ pip install -r requirements.txt
 ## Demo
 
 Demo video
-### TODO WILL ADD LATER
+
+https://github.com/user-attachments/assets/cb55c4a2-f303-42b6-99de-75ff3e417348
+
 
 
 ## Tools
